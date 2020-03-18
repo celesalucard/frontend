@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kelengkapan Administrasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/kelengkapanAdmin.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script src="js/kelengkapanAdmin.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row" id="header-home">
+            <div class="col-6" id="home-logo">
+                <div class="row">
+                    <div class="col-4"><img src="img/favicon.png" id="header-img" style="float: right" alt="itb logo" width="75px" ></div>
+                    <div id="home-quote" class="col-8">
+                        <p id="top-quote">In Harmonia Progressio</p>
+                        <p id="bottom-quote">Institut Teknologi Bandung</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="profile-section">
+                <p id="language-select" style="text-align: right">
+                    <span class="glyphicon glyphicon-log-out"></span><a style="color:white" href="loginMhs.html"> Log out </a>
+                </p>
+                <p id="profile-select" style="text-align: right">Halo, (mahasiswa)!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" style="padding-left: 0px">
+              <div id="navigation-bar">
+                <p><a href="index.html">BERANDA</a></p>
+                <p><a href="status.html">STATUS</a></p>
+                <p style="color:black">ADMINISTRASI</p>
+              </div>
+            </div>
+            <div class="col-9">
+                <h1 style="margin-top: 10px" id="reminder">Kelengkapan Administratif</h1>
+                <div class="row">
+                    <form>
+                        <p style="padding:20"></p>
+                        <div class="form-group">
+                          <label for="uidKTM">UID KTM</label>
+                          <input type="text" class="form-control" id="uidKTM" placeholder="Masukkan UID KTM">
+                        </div>
+                        <div class="form-group">
+                          <label for="filekelengkapan">File Kelengkapan Administratif (.zip)</label>
+                          <input  type="text" class="form-control" id="filekelengkapan" placeholder="Masukkan file (.zip)">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>

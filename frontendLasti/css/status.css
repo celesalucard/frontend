@@ -1,0 +1,65 @@
+#header-home{
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+#home-logo{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#home-quote{
+    padding-left: 0px;
+}
+
+#top-quote{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    color: #ffdf3d;
+}
+
+#bottom-quote{
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+#header-img{
+    padding-top: 10px;
+}
+
+#profile-section{
+    margin-top: 10px;
+    float: right;
+}
+
+#profile-select{
+    margin-top: 60px;
+}
+
+#navigation-bar{
+    padding-left: 20px;
+    padding-top: 40px;
+    font-size: 18px;
+    background-color: #f3f3f3;
+    color: #007bff;
+    height: 78vh;
+}
+#reminder{
+    margin-bottom: 0px;
+}
+
+#biodata-mhs{
+    margin-top: 10px;
+}
+
+#kit-mahasiswa{
+    margin-top: 70px;
+}
+
+#kit-box{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: #f3f3f3;
+    border-radius: 25px;
+}

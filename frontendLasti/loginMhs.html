@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/loginMhs.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script type="text/javascript" src="js/loginMhs.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="min-height: 100vh">
+        <div class="col-8">
+          <h1 id="welcome-title">Selamat Datang!</h1>
+          <p id="welcome-paragraph">
+            Masuk menggunakan ID Registrasi yang didapatkan saat mengisi
+            formulir
+            pendaftaran dari jalur bersangkutan
+          </p>
+          <img src="img/login.png" id="welcome-img" class="rounded mx-auto d-block" alt="login image" width="50%" >
+        </div>
+        <div id="login-side" class="col-4">
+          <div id= "logo-pendaftaran" class="row">
+            <div class="col-2 offset-2">
+              <img src="img/favicon.png" id="itb-logo" alt="itb logo" width="100%">
+            </div>
+            <div class="col-6" style="padding: 0">
+              <p id="registrasi-mhs">
+                Registrasi Mahasiswa Baru Institut Teknologi Bandung
+              </p>
+            </div>
+          </div>
+          <p id="signin">Sign In</p>
+          <form onsubmit="login(); return false;">
+            <div class="form-group">
+              <input type="text" class="form-control" id="no-registrasi" placeholder="Nomor registrasi">
+            </div>
+            <div style="text-align: center">
+              <button id="submit" type="submit" class="btn btn-primary" align="center">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pencarian Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pencarianData.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/pencarianData.js"></script>
+  
+    
+
+    <style>
+      table, th, td {
+          border: 1px solid #707070;
+          border-collapse: collapse;
+          padding:10px;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="header" style="background-color: #0a529f">
+          <div class="col-1" id="itb-logo">
+            <img src="img/favicon.png" id="itb-logo" alt="itb logo" width="60px">
+          </div>
+        <div class="col-10" style="padding-left: 0px; padding-top: 5px;">
+          <h5 style="color: #f6af35">Direktorat Eksekutif Pengelolaan Penerimaan Mahasiswa dan Kerja Sama Pendidikan ITB</h5>
+          <h6 style="color: white">Institut Teknologi Bandung</h6>
+        </div>
+        <div class="col-1">
+          <a href="loginAdmin.html" style="color: white">Logout</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container" id="navigation-bar">
+          <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="addJadwal.html" style="padding-left: 10px">Menambahkan Jadwal <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="editJadwal.html" style="padding-left: 10px">Edit Jadwal</a>
+                <a class="nav-item nav-link" href="dataCalonMhs.html" style="padding-left: 10px">Data Calon Mahasiswa Baru</a>
+                <a class="nav-item nav-link" href="finalisasiDataCalonMhs.html" style="padding-left: 10px">Finalisasi Data Calon Mahasiswa Baru</a>
+                <a class="nav-item nav-link active" href="#" style="padding-left: 10px; color: #f6af35">Pencarian Data</a>
+                <a class="nav-item nav-link" href="#" style="padding-left: 10px">Akun</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row" id="content">
+        <h4>Pencarian Data</h4>
+        <div class="col-12">
+            <div class="row">
+                <div class="col">
+                    <form method="GET" action="#">
+                        <input type="text" placeholder="Masukkan NIM..." name="search" style="padding-right: 50px" id="nim">
+                        <button onclick="hidetabelAllMhs(); getMhs(document.getElementById('nim').value);  "class="btn btn-primary" type="submit" style="background-color: #0a529f" id="search-btn">Search</button>
+                    </form>                      
+                </div>
+            </div>
+        </div>
+      </div>
+      <p style="padding:10px"></p>
+      <div id="allData-mahasiswa" class="col-12">
+        <table id="tabel-mahasiswa" style="width:100%">
+            <tr>
+                <th>NIM</th>
+                <th>KtmUID</th>
+                <th>ID Pendaftar</th>
+                <th>Nama</th>
+                <th>Tanggal Daftar</th>
+                <th>Alamat</th>
+                <th>Fakultas</th>
+                <th>Tempat Tanggal Lahir</th>
+                <th>Tingkat</th>
+                <th>Jalur</th>
+            </tr>
+            <tbody id="tabel-mhs"></tbody>
+        </table>
+    </div>
+    </div>
+    <div class="container">
+        <div id="Data-mahasiswa" class="col-12">
+          <table id="tabel-mahasiswa-by-nim" style="width:100%; display:none; padding:0px;">
+              <tr style="padding:0px">
+                  <th style="padding:0px">NIM</th>
+                  <th style="padding:0px">KtmUID</th>
+                  <th style="padding:0px">ID Pendaftar</th>
+                  <th style="padding:0px">Nama</th>
+                  <th style="padding:0px">Tanggal Daftar</th>
+                  <th style="padding:0px">Alamat</th>
+                  <th style="padding:0px">Fakultas</th>
+                  <th style="padding:0px">Tempat Tanggal Lahir</th>
+                  <th style="padding:0px">Tingkat</th>
+                  <th style="padding:0px">Jalur</th>
+              </tr>
+              <tbody id="tabel-mhs-nim"></tbody>
+          </table>
+      </div>
+    </div>
+
+  </body>
+</html>

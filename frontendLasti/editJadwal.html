@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Jadwal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/editJadwal.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/editJadwal.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid #707070;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="header" style="background-color: #0a529f">
+          <div class="col-1" id="itb-logo">
+            <img src="img/favicon.png" id="itb-logo" alt="itb logo" width="60px">
+          </div>
+        <div class="col-10" style="padding-left: 0px; padding-top: 5px;">
+          <h5 style="color: #f6af35">Direktorat Eksekutif Pengelolaan Penerimaan Mahasiswa dan Kerja Sama Pendidikan ITB</h5>
+          <h6 style="color: white">Institut Teknologi Bandung</h6>
+        </div>
+        <div class="col-1">
+            <a href="loginAdmin.html" style="color: white">Logout</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container" id="navigation-bar">
+          <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="addJadwal.html" style="padding-left: 10px">Menambahkan Jadwal <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#" style="padding-left: 10px; color: #f6af35">Edit Jadwal</a>
+                <a class="nav-item nav-link" href="dataCalonMhs.html" style="padding-left: 10px">Data Calon Mahasiswa Baru</a>
+                <a class="nav-item nav-link" href="finalisasiDataCalonMhs.html" style="padding-left: 10px">Finalisasi Data Calon Mahasiswa Baru</a>
+                <a class="nav-item nav-link" href="pencarianData.html" style="padding-left: 10px">Pencarian Data</a>
+                <a class="nav-item nav-link" href="#" style="padding-left: 10px">Akun</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row" id="content">
+        <h4>Edit Jadwal</h4>
+        <div class="col-12">
+          <form>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div id="jadwal-registrasi" class="col-12">
+                            <table id="tabel-jadwal" style="width:100%">
+                                <tr>
+                                    <th>ID Jadwal</th>
+                                    <th>Tanggal Mulai</th>
+                                    <th>Tanggal Selesai</th>
+                                    <th>Nama Jadwal</th>
+                                    <th>Deskripsi Kegiatan</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tbody id="tabel-rows"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

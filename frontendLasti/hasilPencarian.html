@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pencarian Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hasilPencarian.css">
+    <style>
+        table, th, td {
+            border: 1px solid #707070;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="header" style="background-color: #0a529f">
+          <div class="col-1" id="itb-logo">
+            <img src="img/favicon.png" id="itb-logo" alt="itb logo" width="60px">
+          </div>
+        <div class="col-11" style="padding-left: 0px; padding-top: 5px;">
+          <h5 style="color: #f6af35">Direktorat Eksekutif Pengelolaan Penerimaan Mahasiswa dan Kerja Sama Pendidikan ITB</h5>
+          <h6 style="color: white">Institut Teknologi Bandung</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container" id="navigation-bar">
+          <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="addJadwal.html" style="padding-left: 10px">Menambahkan Jadwal <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="editJadwal.html" style="padding-left: 10px">Edit Jadwal</a>
+                <a class="nav-item nav-link" href="dataCalonMhs.html" style="padding-left: 10px">Data Calon Mahasiswa Baru</a>
+                <a class="nav-item nav-link" href="finalisasiDataCalonMhs.html" style="padding-left: 10px">Finalisasi Data Calon Mahasiswa Baru</a>
+                <a class="nav-item nav-link active" href="#" style="padding-left: 10px; color: #f6af35">Pencarian Data</a>
+                <a class="nav-item nav-link" href="#" style="padding-left: 10px">Akun</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row" id="content">
+        <h4>Pencarian Data</h4>
+        <div class="col-12">
+            <div class="row">
+                <div class="col">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Masukkan NIM..." name="search" style="padding-right: 50px">
+                        <button class="btn btn-primary" href="hasilPencarian.html" type="submit" style="background-color: #0a529f">Search</button>
+                    </form>                      
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div id="data-calonMhs" class="col-12">
+                                    <table id="tabel-calonMhs" style="width:100%">
+                                        <tr>
+                                            <th>ID Pendaftar</th>
+                                            <th>Nama Lengkap</th>
+                                            <th>Tempat, Tanggal Lahir</th>
+                                            <th>Alamat</th>
+                                            <th>Tanggal Lahir</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1234567</td>
+                                            <td>Claudia Renata M. D.</td>
+                                            <td>Surabaya, 19 Mei 1999</td>
+                                            <td>Jl. Cisitu Indah IV No. 21, Bandung</td>
+                                            <td>31 Desember 2019</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beranda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/beranda.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jadwal.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row" id="header-home">
+            <div class="col-6" id="home-logo">
+                <div class="row">
+                    <div class="col-4"><img src="img/favicon.png" id="header-img" style="float: right" alt="itb logo" width="75px" ></div>
+                    <div id="home-quote" class="col-8">
+                        <h5 id="top-quote">In Harmonia Progressio</h5>
+                        <p id="bottom-quote">Institut Teknologi Bandung</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="profile-section">
+                <p id="language-select" style="text-align: right">
+                    <span class="glyphicon glyphicon-log-out"></span><a style="color:white" href="loginMhs.html"> Log out </a>
+                </p>
+                <p id="profile-select" style="text-align: right">Halo, (mahasiswa)!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" style="padding-left: 0px">
+              <div id="navigation-bar">
+                <p style="color:black">BERANDA</p>
+                <p><a href="status.html">STATUS</a></p>
+                <p><a href="kelengkapanAdmin.html">ADMINISTRASI</a></p>
+              </div>
+            </div>
+            <div class="col-9">
+                <h1 style="margin-top: 10px" id="reminder">Reminder</h1>
+                <div id="jadwal-rows"></div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>

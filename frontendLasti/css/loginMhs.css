@@ -1,0 +1,49 @@
+#welcome-title {
+    margin-top: 100px;
+}
+
+#welcome-paragraph {
+    text-align: justify;
+    max-width: 80%;
+}
+
+#welcome-img {
+    margin-top: 40px;
+}
+
+#registrasi-mhs {
+    padding-left: 4px;
+}
+
+#logo-itb {
+    padding: 0;
+}
+
+#registrasi-mhs {
+    padding:0
+}
+
+#logo-pendaftaran {
+    margin-top: 180px;
+}
+
+#signin {
+    text-align: center;
+}
+
+#submit {
+    width: 100%;
+}
+
+#forgot-pass {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+#login-side {
+    background-color: #f3f3f3;
+}

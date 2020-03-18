@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/status.css">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+      <script type="text/javascript" src="js/status.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row" id="header-home">
+            <div class="col-6" id="home-logo">
+                <div class="row">
+                    <div class="col-4"><img src="img/favicon.png" id="header-img" style="float: right" alt="itb logo" width="75px" ></div>
+                    <div id="home-quote" class="col-8">
+                        <p id="top-quote">In Harmonia Progressio</p>
+                        <p id="bottom-quote">Institut Teknologi Bandung</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="profile-section">
+                <p id="language-select" style="text-align: right">
+                    Pilih Bahasa <span class="glyphicon glyphicon-log-out"></span><a style="color:white" href="loginMhs.html"> Log out </a>
+                </p>
+                <p id="profile-select" style="text-align: right">Halo, (mahasiswa)!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" style="padding-left: 0px">
+              <div id="navigation-bar">
+                <p><a href="index.html">BERANDA</a></p>
+                <p style="color:black">STATUS</p>
+                <p><a href="kelengkapanAdmin.html">ADMINISTRASI</a></p>
+              </div>
+            </div>
+            <div class="col-9">
+                <h1 style="margin-top: 10px" id="reminder">Status Pendaftaran</h1>
+                <div class="row">
+                    <div id="biodata-mhs" class="col-6">
+                        <div id="biodata-detail" style="font-size: 12px;">
+                            <p class="font-weight-bold">Nama Lengkap: <span style="font-weight: normal" id="student-name"></span></p>
+                            <p class="font-weight-bold">ID Pendaftaran: <span style="font-weight: normal" id="student-regid"></span></p>
+                            <!--<p class="font-weight-bold">NIM: <span style="font-weight: normal">&nbsp;</span></p>-->
+                            <p class="font-weight-bold">Tanggal Pendaftaran: <span style="font-weight: normal" id="student-regdate"></span></p>
+                            <p class="font-weight-bold">Alamat: <span style="font-weight: normal" id="student-address"></span></p>
+                            <p class="font-weight-bold">Tempat, Tanggal Lahir: <span style="font-weight: normal" id="student-dob"></span></p>
+                            <p class="font-weight-bold">Fakultas: <span style="font-weight: normal" id="student-fac"></span></p>
+                            <p class="font-weight-bold">Tingkat: <span style="font-weight: normal" id="student-level"></span></p>
+                            <p class="font-weight-bold">Jalur: <span style="font-weight: normal" id="student-sel"></span></p>
+                            <!--<p class="font-weight-bold">Beasiswa: <span style="font-weight: normal">&nbsp; Bidikmisi 2019</span></p>-->
+                        </div>
+                    </div>
+                    <div id="kit-mahasiswa" class="col-6">
+                        <div id="kit-box">
+                            <p class="font-weight-bold" style="color: black; font-size: 16px; text-align: center">KIT MAHASISWA</p>
+                            <p>Kartu Tanda Mahasiswa &nbsp;: <img src="img/unavailable.png" id="status-ktm" alt="belum-tersedia" width="20px"></p>
+                            <p>Kelengkapan Administrasi &nbsp;: <img src="img/available.png" id="status-files" alt="tersedia" width="20px"></p>
+                            <p style="text-align: center">Dokumen bisa dilengkapi pada bagian <a href="kelengkapanAdmin.html">administrasi</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
